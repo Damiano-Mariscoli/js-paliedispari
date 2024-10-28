@@ -1,6 +1,7 @@
 // controllare se una parola è palindroma
 
-const text = prompt('inserisci una parola palindroma')
+let text = prompt('inserisci una parola palindroma')
+text = text.toLowerCase()
 function StringReverse(text){
     newText = ''
     for (let i = 0 ;  i < text.length; i ++) {
@@ -8,7 +9,7 @@ function StringReverse(text){
         newText += char
     }return newText
 }
-if (reversedString = (StringReverse(text)) == text){
+if (reversedString = (StringReverse(text)) === text){
     console.log(`la parola ${text} è palindroma.`)
 }else {
     console.log(`la parola ${text} non è palindroma.`)
@@ -36,7 +37,8 @@ function isOdd(sum){
     }
 }
 
-const evenOdd = prompt('inserisci  "pari" o "dispari"')
+let evenOdd = prompt('inserisci  "pari" o "dispari"')
+evenOdd = evenOdd.toLowerCase()
 const numUser = parseInt(prompt('inserisci un numero da 1 a 5'))
 const numComputer = randomIntFromOneToFive()
 const sum = numUser + numComputer
